@@ -6,15 +6,15 @@ const Portfolio = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.selectTitle}>Choose a gallery</h1>
-      <div className={styles.items}>
-        <Link href="/portfolio/illustrations" className={styles.item}>
-          <span className={styles.title}>Illustrations</span>
+      <div className="lg:flex-row flex  flex-col items-center lg:items-center  justify-center  gap-4">
+        <Link href="/portfolio/illustrations" className={`${styles.item} hover:text-[#53c28b]`}>
+          <span className="absolute  right-[10px] bottom-[10px] text-[30px] lg:text-[40px] font-bold ">Illustrations</span>
         </Link>
-        <Link href="/portfolio/websites" className={styles.item}>
-          <span className={styles.title}>Websites</span>
+        <Link href="/portfolio/websites" className={`${styles.item} hover:text-[#53c28b]`}>
+          <span className="absolute  right-[10px] bottom-[10px] text-[30px] lg:text-[40px] font-bold ">Websites</span>
         </Link>
-        <Link href="/portfolio/applications" className={styles.item}>
-          <span className={styles.title}>Application</span>
+        <Link href="/portfolio/applications" className={`${styles.item} hover:text-[#53c28b]`}>
+          <span className="absolute  right-[10px] bottom-[10px] text-[30px] lg:text-[40px] font-bold ">Application</span>
         </Link>
       </div>
     </div>

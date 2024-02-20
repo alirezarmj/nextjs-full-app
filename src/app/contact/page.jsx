@@ -10,10 +10,10 @@ export const metadata = {
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <h1 className={styles.title}>Let s Keep in Touch</h1>
-      <div className={styles.content}>
-        <div className={styles.imgContainer}>
+      <div className="md:flex-row flex  flex-col items-center md:items-center  justify-center  gap-4">
+        <div className="flex-1 h-[500px] relative">
           <Image src="/contact.png" alt="" fill={true} className={styles.image} />
         </div>
         <form className={styles.form}>
