@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import styles from "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { signOut, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const links = [
   {
@@ -44,7 +45,7 @@ const links = [
 const Navbar = () => {
   const session = useSession();
   const [nav, setNav] = useState(false);
-
+  const router = useRouter();
   return (
     <div className="w-full h-[80px] ">
       <div className="max-w-[1240px] h-full mx-auto">
