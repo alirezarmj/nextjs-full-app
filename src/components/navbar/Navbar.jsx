@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="flex  justify-between items-center h-full w-full">
           <div className="flex items-center gap-2 pr-2">
             <Link href="/" className="xl:text-[22px] text-[18px] whitespace-nowrap font-bold">
-              Web Developer
+              Nextjs App
             </Link>
 
             <div className="hidden md:flex  rounded-md duration-150">
@@ -91,7 +91,7 @@ const Navbar = () => {
             {" "}
             {/* ref={boxRef} */}
             <div className="flex justify-between items-center mb-8">
-              <h1 className="text-black text-base  md:text-xl font-bold dark:text-white">Nextjs Meetups </h1>
+              <h1 className="text-black text-base  md:text-xl font-bold dark:text-white">Nextjs App </h1>
               <RxCross2 className="cursor-pointer" size={30} onClick={() => setNav((prev) => !prev)} />
             </div>
             <div className="text-pink-600 flex flex-col gap-10 sm:text-lg items-center  text-xs p-6  ">
