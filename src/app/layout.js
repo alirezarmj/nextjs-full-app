@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ThemeProvider>
           <AuthProvider>
-            <div className="container">
+            <div className="container hiddenScrollBar overflow-y-scroll">
               <Navbar />
               {children}
               <Footer />
